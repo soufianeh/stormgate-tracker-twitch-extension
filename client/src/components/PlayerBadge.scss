@@ -1,0 +1,11 @@
+.player-badge {
+  display: flex;
+  gap: 5px;
+  span {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 180px;
+  }
+}

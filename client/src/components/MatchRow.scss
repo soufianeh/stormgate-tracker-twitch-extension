@@ -1,0 +1,57 @@
+.match-row {
+  border-top: 1px solid #2a2a2b;
+  &:last-child {
+    border-bottom: 1px solid #2a2a2b;
+  }
+  .player {
+    width: 35%;
+  }
+  .mmr-change {
+    text-align: right;
+    .mmr {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+  }
+  &.result-w {
+    .result div {
+      background-color: rgb(85, 234, 0);
+    }
+    .mmr-change {
+      color: rgb(85, 234, 0);
+    }
+  }
+  &.result-l {
+    .result div {
+      background-color: rgb(234, 0, 0);
+    }
+    .mmr-change {
+      color: rgb(234, 0, 0);
+    }
+  }
+  &.result-no {
+    .result div {
+      background-color: gray;
+    }
+    .mmr-change {
+      color: gray;
+    }
+  }
+  .result {
+    text-transform: uppercase;
+    color: #080808;
+    display: flex;
+    justify-content: center;
+    div {
+      font-size: 12px;
+      font-weight: bold;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+    }
+  }
+}

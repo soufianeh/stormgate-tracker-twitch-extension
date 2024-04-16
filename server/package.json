@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "cron": "ts-node src/scripts/data_cron.ts",
+    "build": "tsc",
+    "start": "node --es-module-specifier-resolution=node dist/src/index.js",
+    "deploy": "tsc && scp -r dist soufiane@dosoufiane:/var/www/stormgate/"
+  },
+  "type": "module",
+  "dependencies": {
+    "@hono/node-server": "^1.8.1",
+    "hono": "^4.0.5",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "esbuild": "0.20.1",
+    "tsx": "^3.12.2",
+    "typescript": "^5.3.3"
+  }
+}
